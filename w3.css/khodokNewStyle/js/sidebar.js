@@ -2,17 +2,18 @@ function w3_open() {
     document.getElementById("main").style.marginLeft = "15%";
     document.getElementById("mySidebar").style.width = "15%";
     document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-    window.setTimeout(()=>{
+    //document.getElementById("myOverlay").style.display = "block";
+    document.getElementById("openNav").style.margin = "-150px 0";
 
-      document.getElementById("openNav").style.marginTop = "-150px";
-
-    }, 100);
 
 }
 function w3_close() {
     document.getElementById("main").style.marginLeft = "0%";
     document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-    document.getElementById("openNav").style.marginTop = "0px";
+    //document.getElementById("myOverlay").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+
+    document.getElementById("openNav").style.margin = "0px";
+
+
 }
